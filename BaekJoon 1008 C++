@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	double x, y;                   //실수형 변수타입인 double을 사용해야 x/y도 실수로 표시될 수 있다 (*)
-	while (1) {
+	while (1) {                    //while(1)은 항상 참이라서 안에 있는 코드들이 무한루프를, while (0)은 그 반대로 안의 코드가 실행X
 		cin >> x >> y;            //입력문을 while문 안에 넣어야만 반복이 된 직후 다른 숫자를 넣을 수 있게 된다.
 		if (x > 0 && y < 10 && y != 0)
 			break;
