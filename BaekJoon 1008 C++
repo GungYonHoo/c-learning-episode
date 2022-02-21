@@ -1,0 +1,19 @@
+//백준 1008번 나눗셈
+#include<iostream>
+using namespace std;
+
+
+
+int main()
+{
+	double x, y;                   //실수형 변수타입인 double을 사용해야 x/y도 실수로 표시될 수 있다 (*)
+	while (1) {
+		cin >> x >> y;            //입력문을 while문 안에 넣어야만 반복이 된 직후 다른 숫자를 넣을 수 있게 된다.
+		if (x > 0 && y < 10 && y != 0)
+			break;
+		else
+			continue;
+}
+	cout.precision(15);           //출력될 숫자의 자리수를 설정해주는 문장이다. https://pmoncode.tistory.com/20 
+	cout << x/y;
+}
